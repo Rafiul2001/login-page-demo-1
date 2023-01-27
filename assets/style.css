@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-image img{
+    width: auto;
+    height: 100vh;
+}
+.login-page{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.login-page h1{
+    color: #3b4859;
+    margin-bottom: 15px;
+}
+.login-page form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login-page form .input-label{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #3b4859;
+}
+.login-page form .input-item{
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px 10px;
+    border: solid 1px #3b48598c;
+    outline: none;
+}
+.login-page form .input-item:focus{
+    box-shadow: 0 0 2px rgb(0, 33, 82);
+}
+.login-page form .submit-btn{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-radius: 15px;
+    background-color: #3b4859;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.login-page form .submit-btn:hover{
+    background-color: #3064b3;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text hr{
+    position: absolute;
+    width: 100%;
+}
+.text p{
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 0 15px;
+    width: fit-content;
+    margin: 15px auto;
+    text-align: center;
+    color: #3064b3;
+}
+.social-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.social-links img{
+    width: 44px;
+    height: 44px;
+}
+.login-page form a{
+    text-decoration: none;
+}
+.forgot-password-text{
+    width: 100%;
+    color: #3064b3;
+    text-align: center;
+}
+.forgot-password-text:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .login-image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login-page{
+        width: 280px;
+    }
+}
