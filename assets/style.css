@@ -82,6 +82,12 @@
     text-align: center;
     color: #3064b3;
 }
+.text a{
+    z-index: 1;
+}
+.text a:hover{
+    text-decoration: underline;
+}
 .social-links{
     width: 100%;
     display: flex;
